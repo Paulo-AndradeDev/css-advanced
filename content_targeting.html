@@ -1,0 +1,62 @@
+<html>
+<head>
+
+    <title>Exemplo de uso do :target no CSS</title>
+
+    <style>
+
+        #section1 {
+            display: none;
+        }
+
+        #section1:target {
+            display: block;
+            background-color: lightblue;
+        }
+
+        #section2 {
+            display: none;
+        }
+
+        #section2:target {
+            display: block;
+            background-color: lightyellow;
+        }
+
+        #section3 {
+            display: none;
+        }
+
+        #section3:target {
+            display: block;
+            background-color: lightgreen;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <a href="#section1">Seção 1</a>&nbsp;|&nbsp;
+    <a href="#section2">Seção 2</a>&nbsp;|&nbsp;
+    <a href="#section3">Seção 3</a>
+
+    <div id="section1">Eu sou a Seção 1.</div>
+    <div id="section2">Eu sou a Seção 22 </div>
+    <div id="section3">Eu sou a Seção 333 </div>
+
+</body>
+
+</html>
+<!-- 
+Google Chrome: Suporte desde a versão 4, lançada em 2009.
+
+Mozilla Firefox: Suporte desde a versão 3.5, lançada em 2009.
+
+Apple Safari: Suporte desde a versão 4, lançada em 2009.
+
+Microsoft Edge: Suporte desde a primeira versão, lançada em 2015.
+
+Internet Explorer: Suporte a partir da versão 9, lançada em 2011. No entanto, vale notar que o Internet Explorer 8 e versões anteriores, lançadas antes de 2011, não suportam o :target.
+-->
